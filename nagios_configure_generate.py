@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import urllib, urllib2
+from urllib import urllib2
 import json
 import os
 
@@ -46,9 +46,9 @@ def main():
     result = getHosts()
     if result['status'] == 1:
         genNagiosHost(result['data'])
-        print 'Generate the nagios of host successfully!'
+        print('Generate the nagios of host successfully!')
     else:
-        print 'Error: %s, Please check it again.' % result['message']
+        print('Error: %s, Please check it again.' % result['message'])
     return True
 
 if __name__ == "__main__":

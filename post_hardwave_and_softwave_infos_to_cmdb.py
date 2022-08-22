@@ -4,7 +4,7 @@
 from subprocess import Popen, PIPE
 import re
 import urllib
-import urllib2
+from urllib import urllib2
 import platform
 
 def getIfconfig():
@@ -118,9 +118,9 @@ def main():
 
 if __name__ == "__main__":
     result = main()
-    print 'Get the hardwave and softwave infos from host:'
-    print result
-    print '----------------------------------------------------------'
+    print('Get the hardwave and softwave infos from host:')
+    print(result)
+    print('----------------------------------------------------------')
     postData(result)
-    print 'Post the hardwave and softwave infos to CMDB successfully!'
+    print('Post the hardwave and softwave infos to CMDB successfully!')
 

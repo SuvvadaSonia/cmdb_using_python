@@ -63,19 +63,19 @@ def main():
     data = getFreeMemory()
     free_mem = getConvert(data)
     if w >= free_mem > c: 
-        print "WARNING, FreeMem: %s" % free_mem
+        print("WARNING, FreeMem: %s" % free_mem)
         sys.exit(WARNING)
         #return WARNING
     elif free_mem <= c:
-        print "CRICITICAL, FreeMem: %s" % free_mem
+        print("CRICITICAL, FreeMem: %s" % free_mem)
         sys.exit(CRICITICAL)
         #return CRICITICAL
     elif free_mem > w:
-        print "OK, FreeMem: %s" % free_mem
+        print("OK, FreeMem: %s" % free_mem)
         sys.exit(OK)
         #return OK
     else:
-        print "UNKNOWN, FreeMem: %s" % free_mem
+        print("UNKNOWN, FreeMem: %s" % free_mem)
         sys.exit(UNKNOWN)
         #return UNKNOWN
 

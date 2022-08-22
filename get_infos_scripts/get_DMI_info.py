@@ -2,7 +2,8 @@
 # -*- coding:utf-8 -*-
 
 from subprocess import PIPE,Popen
-import urllib, urllib2
+import urllib
+from urllib import urllib2
 
 def getDMI():
     p = Popen('dmidecode',shell=True,stdout=PIPE)

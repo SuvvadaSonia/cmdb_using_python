@@ -6,7 +6,7 @@ from models import Host, Ipaddr, HostGroup
 
 try:
     import json
-except ImportError,e:
+except ImportError as e:
     import simplejson as json
 
 def collect(request):
